@@ -131,6 +131,8 @@ body {
 .hero-content {
   flex: 1;
   max-width: 600px;
+  position: relative;
+  z-index: 3;
 }
 
 .badge-title {
@@ -220,6 +222,7 @@ body {
   justify-content: center;
   align-items: center;
   right: -250px;
+  pointer-events: none;
 }
 
 .profile-photo {
