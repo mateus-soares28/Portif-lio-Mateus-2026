@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Soares - Desenvolvedor Full Stack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <canvas id="shader-canvas"></canvas>
+
+    <div class="app-container">
+
+        <header class="navbar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L12 12L20 4V20L12 12L4 20V4Z" fill="url(#paint0_linear)" />
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="4" y1="4" x2="20" y2="20"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#A78BFA" />
+                                <stop offset="1" stop-color="#3B82F6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Mateus Soares</span>
+                <div class="availability-badge">
+                    <span class="dot"></span> Disponível para novos projetos
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Ativar tema claro" title="Ativar tema claro">
+                <i class="ph ph-sun"></i>
+            </button>
+        </header>
+
+        <main class="hero" id="inicio">
+
+            <div class="hero-image-wrapper">
+                <img src="./img/mateus_portif_lio_2_1x.webp" alt="Mateus Soares" class="profile-photo">
+
+                <div class="glass-card floating-info">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="ph ph-user"></i></div>
+                        <div class="info-text">
+                            <span class="info-title">Desenvolvedor</span>
+                            <span class="info-desc">Full Stack</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="ph ph-map-pin"></i></div>
+                        <div class="info-text">
+                            <span class="info-title">Brasil</span>
+                            <span class="info-desc">Remoto</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="ph ph-code"></i></div>
+                        <div class="info-text">
+                            <span class="info-title">Disponível para</span>
+                            <span class="info-desc">novos projetos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="badge-title">
+                    <i class="ph ph-code"></i> DESENVOLVEDOR FULL STACK
+                </div>
+
+                <h1 class="main-title">
+                    Mateus<br>
+                    <span class="gradient-text">Soares</span>
+                </h1>
+
+                <p class="description">
+                    Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais com código limpo e
+                    soluções escaláveis.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#projetos" class="btn btn-primary">
+                        Ver Projetos <i class="ph ph-arrow-right"></i>
+                    </a>
+
+                    <a href="https://wa.me/5547996838914" target="_blank" class="btn btn-secondary">
+                        Entrar em Contato <i class="ph ph-chat-circle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="tech-stack-container">
+            <div class="tech-stack glass-card">
+                <span class="tech-title">TECNOLOGIAS</span>
+                <img src="./img/techs_1_1x.webp" alt="Logos das tecnologias usadas" class="techs-image">
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/mateus-soares28" class="icon-box social"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.linkedin.com/in/mateus-soares-28/" class="icon-box social"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="mailto:matheuus_ssoares28@hotmail.com" class="icon-box social"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="projects-section" id="projetos">
+  
+  <div class="section-top">
+    <div class="badge-work">
+      <i class="ph ph-folder"></i> MEU TRABALHO
+    </div>
+    
+    <div class="filter-menu">
+      <button class="filter-btn active" data-filter="all">
+        <i class="ph ph-squares-four"></i> Todos
+      </button>
+      <button class="filter-btn" data-filter="Landing-Page">
+        <i class="ph ph-monitor"></i> Landing Page
+      </button>
+      <button class="filter-btn" data-filter="api">
+        <i class="ph ph-code"></i> APIs
+      </button>
+      <button class="filter-btn" data-filter="system">
+        <i class="ph ph-database"></i> Sistemas
+      </button>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    
+    <div class="title-block">
+      <h2 class="section-title">
+        Projetos<br>
+        <span class="gradient-text">em destaque</span>
+      </h2>
+      <p class="section-description">
+        Soluções completas desenvolvidas do zero, unindo performance, experiência e código limpo.
+      </p>
+    </div>
+
+    <div class="project-card horizontal json-card" data-category="Landing-Page">
+      <div class="card-preview image-preview">
+        <img src="./img/projeto-camilly_1x.webp" alt="Preview do projeto Camilly Rumpf" class="project-preview-image">
+      </div>
+      <div class="card-info">
+        <div class="card-header-title">
+          <h3>Camilly Rumpf</h3>
+          <a href="https://mateus-soares28.github.io/Landing-page-Camilly/" target="_blank" class="icon-link"><i class="ph ph-arrow-square-out"></i></a>
+        </div>
+        <p>Landing page para apresentação de serviços.</p>
+        <div class="card-techs">
+          <i class="ph ph-file-html text-orange" title="HTML"></i>
+          <i class="ph ph-file-css text-blue" title="CSS"></i>
+          <i class="ph ph-file-js text-yellow" title="JavaScript"></i>
+        </div>
+        <a href="https://mateus-soares28.github.io/Landing-page-Camilly/" target="_blank" class="view-project-link">Ver projeto <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="project-card vertical json-card" data-category="Landing-Page">
+      <div class="card-preview image-preview">
+        <img src="./img/arenaviva_portifolio_1x.webp" alt="Preview do projeto Arena Viva" class="project-preview-image">
+      </div>
+      <div class="card-info">
+        <div class="card-header-title">
+          <h3>Arena Viva</h3>
+          <a href="https://mateus-soares28.github.io/Arena-Viva-Buamann/" target="_blank" class="icon-link"><i class="ph ph-arrow-square-out"></i></a>
+        </div>
+        <p>Landing page para apresentação de serviços.</p>
+        <div class="card-techs">
+          <i class="ph ph-file-html text-orange" title="HTML"></i>
+          <i class="ph ph-file-css text-blue" title="CSS"></i>
+          <i class="ph ph-file-js text-yellow" title="JavaScript"></i>
+        </div>
+        <a href="https://mateus-soares28.github.io/Arena-Viva-Buamann/" target="_blank" class="view-project-link">Ver projeto <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+    
+
+    <div class="project-card vertical json-card" data-category="system">
+      <div class="card-preview image-preview contain-preview">
+        <img src="./img/sistema_inscricoes_1_1x.webp" alt="Preview do projeto Sistema de Inscrições" class="project-preview-image">
+      </div>
+      <div class="card-info">
+        <div class="card-header-title">
+          <h3>Sistema de Inscrições</h3>
+          <a href="https://torneio-m9uh.onrender.com/" target="_blank" class="icon-link"><i class="ph ph-arrow-square-out"></i></a>
+        </div>
+        <p>Sistema de inscrições para quadra de esporte de Areia. Escalaável e com interface intuitiva.</p>
+        <div class="card-techs">
+          <i class="ph ph-file-html text-orange" title="HTML"></i>
+          <i class="ph ph-file-css text-blue" title="CSS"></i>
+          <i class="ph ph-file-js text-yellow" title="JavaScript"></i>
+          <i class="ph ph-hexagon text-green" title="Node.js"></i>
+        </div>
+        <a href="https://torneio-m9uh.onrender.com/" target="_blank" class="view-project-link">Ver projeto <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta-banner-bottom">
+    <div class="cta-text">
+      <h4>Tem uma ideia em mente?</h4>
+      <p>Vamos transformar em algo incrível juntos!</p>
+    </div>
+    <a href="https://wa.me/5547996838914" target="_blank" class="btn-cta-purple">
+      Entrar em contato <i class="ph ph-chat-circle"></i>
+    </a>
+  </div>
+
+</section>
+
+<section class="about-section" id="sobre">
+  
+  <div class="about-top-grid">
+    
+    <div class="about-intro">
+      <div class="badge-about">
+        <i class="ph ph-user"></i> QUEM SOU EU
+      </div>
+      <h2 class="about-title">
+        Desenvolvedor<br>
+        <span class="gradient-text">Full Stack</span>
+      </h2>
+      <p class="about-text-highlight">
+        Apaixonado por tecnologia e por transformar ideias em soluções digitais eficientes, escaláveis e com excelente experiência de usuário.
+      </p>
+      <p class="about-text-sub">
+        Atuo no desenvolvimento de aplicações completas, do backend ao frontend, com foco em performance, segurança e boas práticas.
+      </p>
+      </div>
+
+    <div class="about-photo-container">
+      <img src="./img/mateus_portif_lio_2_1x.webp" alt="Mateus Soares" class="about-photo">
+    </div>
+
+    <div class="about-cards-column" id="contato">
+      
+      <div class="glass-card about-card journey-card">
+        <h3><i class="ph ph-user-focus"></i> Minha jornada</h3>
+        <p>
+          Iniciei minha jornada na programação por curiosidade e hoje é o que me move todos os dias. Acredito que código é mais do que lógica, é sobre resolver problemas e gerar impacto real na vida das pessoas.
+        </p>
+        <p>
+          Atualmente, estou focado em criar produtos digitais modernos e escaláveis, sempre aprendendo e compartilhando conhecimento.
+        </p>
+      </div>
+
+      <div class="glass-card about-card tech-tools-card">
+        <h3><i class="ph ph-code"></i> Tecnologias & Ferramentas</h3>
+        <div class="tools-grid">
+          <img src="./img/techs_sobre_1_1x.webp" alt="Logos das tecnologias e ferramentas usadas" class="tools-image">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="about-bottom-row">
+    
+    <div class="glass-card trajectory-card">
+      <h3><i class="ph ph-briefcase"></i> Minha trajetória</h3>
+      
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ph ph-rocket-launch"></i></div>
+          <div class="timeline-content">
+            <h4>Início da jornada</h4>
+            <span class="year">2023</span>
+            <p>Comecei a estudar programação e desenvolvi meus primeiros projetos pessoais.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ph ph-suitcase"></i></div>
+          <div class="timeline-content">
+            <h4>Primeiros freelas</h4>
+            <span class="year">2024</span>
+            <p>Atuei em projetos freelance, colocando em prática meus conhecimentos.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ph ph-code-block"></i></div>
+          <div class="timeline-content">
+            <h4>Foco em Full Stack</h4>
+            <span class="year">2024</span>
+            <p>Aprofundei em tecnologias modernas e me tornei desenvolvedor Full Stack.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ph ph-star"></i></div>
+          <div class="timeline-content">
+            <h4>Projetos de impacto</h4>
+            <span class="year">2025/26</span>
+            <p>Construindo soluções escaláveis e com foco em performance e experiência.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="glass-card inline-cta-card">
+      <div class="cta-inner">
+        <h4>Vamos criar algo incrível juntos? 🚀</h4>
+        <p>Estou sempre aberto a novos desafios e oportunidades para construir soluções digitais que fazem a diferença.</p>
+        <a href="https://wa.me/5547996838914" target="_blank" class="btn-cta-purple-about">
+          Entrar em contato <i class="ph ph-chat-circle"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
