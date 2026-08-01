@@ -188,6 +188,7 @@
   .project-card.horizontal .card-preview,
   .project-card.vertical .card-preview {
     height: 300px;
+    min-height: 300px;
   }
 
   .title-block {
@@ -442,6 +443,7 @@
   .project-card.horizontal .card-preview,
   .project-card.vertical .card-preview {
     height: 210px;
+    min-height: 210px;
   }
 
   .card-preview.image-preview {
